@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function FormPost() {
-    let[postdData,setPostedData] = React.useState('')
+    let[postedData,setPostedData] = React.useState('')
     const form = React.useRef()
 
     const onSubmitForm = (event) =>{
@@ -30,7 +30,7 @@ export default function FormPost() {
                 <button>ตกลง</button>
             </form>
             <br/>
-            <div dangerouslySetInnerHTML={{__html:postdData}}></div>
+            <div dangerouslySetInnerHTML={{__html:postedData}}></div>
         </div>
     )
 }
